@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Drycleaners</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!---bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!---Top Most Strip-->
+    <div class="container-fluid" id="top-most-strip" style="background-color: #194276;">
+        <div class="row justify-content" style="height:60px">
+            <div class="col-lg-6 col-sm-6 text-white"style="padding-left: 100px;">
+              Home &nbsp;| &nbsp;Help</div>
+            <div class="col-lg-6 col-sm-6 text-white" style="display:inline-flex; justify-content: flex-end;padding-right: 110px;">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                </svg>
+              </span>
+              <span class="ps-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                </svg>
+              </span>
+              <span class="ps-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                </svg>
+              </span>
+            </div>
+        </div>
+    </div>
+    <!--Mobile Screen Navbar-->
+    <div id="mobile-nav">
+      <img src="Assets\YashDrycleaners.png" class="img-fluid p-2 " id="logo">
+      <div class="dropdown bg-light" id="stickyy">
+          <div class="border-top border-bottom" style="display:flex; justify-content: space-around; align-items: center;">
+            <li class="btn">
+               <a class="nav-link active" aria-current="page" href="Index.html" style="font-size: 20px; color: black;">Home</a>
+           </li>
+             <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #194276; color: white;">Menu
+            </a>
+         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <li><a class="dropdown-item" href="#About-us">About </a></li>
+          <li><a class="dropdown-item" href="#Our-services">Services</a></li>
+          <li><a class="dropdown-item" href="#blogs">Blog</a></li>
+          <li><a class="dropdown-item" href="#footer-links">Contact Us</a></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+
+    <!---Large Screen NavBar Strip--->
+    <div class="container" id="nav">
+      <div class="row bg-light align-items-center">
+          <div class="col-lg-6 col-sm-6 p-3 ps-4">
+              <img src="Assets\YashDrycleaners.png" id="logo">
+          </div>
+          <div class="col-lg-6 col-sm-6">
+              <ul class="nav justify-content-end" id="navbar-links" style="font-weight:500;">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Index.html" style="color: black;">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#About-us" style="color: black;">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Our-services" style="color: black;">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#blogs" style="color: black;">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#footer-links" style="color: black;">Contact Us</a>
+                    </li>
+                </ul>
+          </div>
+      </div>
+  </div>
+ 
+     <!--carousel-->
+      <div id="carouselExampleIndicators" class="carousel slide bg-dark" data-bs-ride="carousel" >
+        <div class="carousel-inner" >
+          <div class="carousel-item active">
+            <img src="Assets\Car_01.jpg" class="d-block w-100 img-fluid" style="filter: blur(3px);"alt="...">
+            <div class="carousel-caption">
+              <span id="slide-1-title" style="font-weight: normal;">LAUNDRY & DRY CLEANING</span>
+              <h2 id="carousel-t">Best For Laundry <br> Services In Pune </h2>
+              <a class="btn text-white" href="#Learnabtus"  id="learn-more" role="button">Learn More</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Assets\Car_02.jpg" class="d-block w-100 img-fluid"  alt="..."  >
+          </div>
+          <div class="carousel-item">
+            <img src="Assets\Car_03.jpg" class="d-block w-100 img-fluid" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+    <!-- --Button Group-->
+  <div class="container-fluid"  id="btn-grp">
+    <div class="btn-group" id="buttons" role="group" aria-label="Basic example">
+      <button type="button" class="btn bg-info" id="Our-Location"> 
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-geo-alt-fill" id="location" viewBox="0 0 16 16">
+          <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+        </svg>
+        Our Location<br>
+        <span style="font-size: 20px; position: relative; right:-10px; bottom:10px;">Pimpri, Pune</span>
+      </button>
+      <button type="button" class="btn"  id="Email-Us">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"  fill="white" class="bi bi-envelope-fill" id="email" viewBox="0 0 16 16">
+          <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+        </svg>
+        Email Us<br>
+        <span style="font-size: 20px; position: relative; right:-10px; bottom:10px;">yashdrycleaners@gmail.com</span>
+      </button>
+      <button type="button" class="btn bg-info" id="Call-Us"> 
+        <svg xmlns="http://www.w3.org/2000/svg" id="teleicon" width="30" height="30" fill="white" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+        </svg> Call Us <br>
+        <span style="font-size: 20px; position: relative; right:-10px; bottom:10px;">+91 2345098651</span>
+      </button>
+    </div>
+  </div>
+  <!---Contents-->
+  <div class="container">
+    <!---qualities & learn abt us --->
+    <div class="row mt-4  mb-5" id="Learnabtus">
+      <div class="col-lg-6 col-sm-12">
+         <img src="Assets\card.jpg" class="img-fluid start" id="card-img" alt="..." style="height:500px">
+      </div>
+      <div class="col-lg-6 col-sm-12 ps-3" id="card-text">
+        <p style="color:#47C6CF; font-size:20px; font-weight:bolder;"> Learn About Us </p>
+        <h2 style="font-size: 40px; font-weight:bolder;  line-height:40px; color: #194276;">
+          We Are Quality Laundry<br>
+          Provider In Your City
+        </h2>
+        <p class="pt-2 pb-2" style="color: #194276; font-weight: bold;">
+          The Detroit of the East, Pimpri Chinchwad, is a famous industrial town in the south-east of Pune. 
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque saepe magni labore, repellendus sint dicta a deleniti pariatur, velit facere voluptates eum tempore asperiores temporibus! Commodi totam quisquam illo cum!
+        </p>
+        <div class="qualities-grid pt-3">
+            <div class="qualties-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#194276" class="bi bi-check" viewBox="0 0 16 16">
+                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+              </svg>
+              Quality Laundry Service
+            </div>
+            <div class= "qualties-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#194276" class="bi bi-check" viewBox="0 0 16 16">
+                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+              </svg>
+              Highly Professional Stuff
+            </div>
+            <div class="qualties-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#194276" class="bi bi-check" viewBox="0 0 16 16">
+                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+              </svg>
+              Affordable Charges
+            </div>
+            <div class="qualties-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#194276" class="bi bi-check" viewBox="0 0 16 16">
+                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+              </svg>
+              Free Pick-up & Delivery
+            </div>
+    
+        </div>
+      </div>
+    </div>
+    <!---Our services-->
+    <div id="Our-services">
+      <h4 style="color:#47C6CF; text-align:center">
+        Our Services
+      </h4>
+      <h2 style="text-align:center; color:#194276; font-size:35px; font-weight:bold;">
+        What we Offer
+      </h2>
+      <!--Services Grid -->
+      <div class="service-grid">
+        <div class="service-item">
+          <div class="iconwrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#47C6CF" class="bi bi-droplet-half" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.21.8C7.69.295 8 0 8 0c.109.363.234.708.371 1.038.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8zm.413 1.021A31.25 31.25 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10c0 0 2.5 1.5 5 .5s5-.5 5-.5c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z"/>
+                <path fill-rule="evenodd" d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448z"/>
+            </svg>
+        </div>
+        <h5 class="service-title">Curtain Drycleaning</h5>
+      </div>
+      <div class="service-item">
+        <div class="iconwrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#47C6CF" class="bi bi-water" viewBox="0 0 16 16">
+              <path d="M.036 3.314a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 3.964a.5.5 0 0 1-.278-.65zm0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 6.964a.5.5 0 0 1-.278-.65zm0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 9.964a.5.5 0 0 1-.278-.65zm0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.757-.703a.5.5 0 0 1-.278-.65z"/>
+            </svg>
+          </div>
+          <h5 class="service-title">Dry Cleaning</h5>
+        </div>
+        <div class="service-item">
+          <div class="iconwrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#47C6CF" class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+              <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+            </svg>
+          </div>
+          <h5 class="service-title">Wash & Laundry</h5>
+        </div>
+        <div class="service-item">
+          <div class="iconwrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#47C6CF" class="bi bi-bucket-fill" viewBox="0 0 16 16">
+              <path d="M2.522 5H2a.5.5 0 0 0-.494.574l1.372 9.149A1.5 1.5 0 0 0 4.36 16h7.278a1.5 1.5 0 0 0 1.483-1.277l1.373-9.149A.5.5 0 0 0 14 5h-.522A5.5 5.5 0 0 0 2.522 5zm1.005 0a4.5 4.5 0 0 1 8.945 0H3.527z"/>
+            </svg>
+            <h5 class="service-title">Suits Cleaning</h5>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!--Why Choose us-->
+    <div class="WhyUs-container" id="About-us">
+      <div class="row" style="height: 500px;">
+        <div class="col-lg-7 col-sm-12" style="padding-top:60px; padding-left:20px;">
+          <h5 style="color:#47C6CF; font-size:20px; font-weight:bolder;">
+            Wondering
+          </h5>
+          <h3 style="color:#194276; font-size:40px; font-weight:bolder;">
+            Why Choose Us?
+          </h3>
+          <p style="font-weight:400px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia impedit, dolorum nihil, error deleniti at accusamus, dolorem saepe dignissimos sapiente non minus labore voluptatem cum qui quos animi voluptatibus inventore.
+          </p>
+          <div class="chooseus-grid-container col-sm-6">
+            <div class="chooseus-grid-item">
+              <h3 style="color:#47C6CF; font-size:50px; font-weight:bolder;">
+                4
+              </h3>
+              <p style="color:#194276; font-size:20px; font-weight:bolder;">
+                Years of Experience
+              </p>
+            </div>
+            <div class="chooseus-grid-item">
+                <h3 style="color:#47C6CF; font-size:50px; font-weight:bolder;">
+                  1
+                </h3>
+                <p style="color:#194276; font-size:20px; font-weight:bolder;">
+                  Expert Worker
+                </p>
+            </div>
+            <div class="chooseus-grid-item">
+              <h3 style="color:#47C6CF; font-size:50px; font-weight:bolder;">
+                363
+              </h3>
+              <p style="color:#194276; font-size:20px; font-weight:bolder;">
+                Happy Clients
+              </p>
+            </div>
+            <div class="chooseus-grid-item">
+              <h3 style="color:#47C6CF; font-size:50px; font-weight:bolder;">
+                2770
+              </h3>
+              <p style="color:#194276; font-size:20px; font-weight:bolder;">
+                Dry Cleaning
+               </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 bg-info" id="years-experience" style="position:relative;" >
+            <svg xmlns="http://www.w3.org/2000/svg" id="award" width="100" height="100" fill="white" class="bi bi-award-fill" viewBox="0 0 16 16">
+              <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"/>
+              <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+            </svg>
+            
+            <span style="text-align:center; font-size:80px; font-weight: bold; color: white; position: relative;  top: 230px;
+            left: 180px;">
+              20+
+            </span>
+            <p style="text-align:center; font-size:40px; color: white; position: relative;  top: 210px;
+            left: 20px; line-height: 40px;">
+            Years of Experience
+            </p>
+          </div>
+        </div>
+      </div>
+    <!--work Process-->
+    <div class="workprocess">
+        <h4 style="color:#47C6CF; text-align:center">
+          WORKING PROCESS
+        </h4>
+        <h2 style="text-align:center; color:#194276; font-size:35px; font-weight:bold;">
+          How We Work
+        </h2>
+        <div class="work-process-grid">
+          <div class="work-process-item number-item">
+            1
+          </div>
+          <div class="work-process-item number-item">
+            2
+          </div>
+          <div class="work-process-item number-item">
+            3
+          </div>
+          <div class="work-process-item number-item">
+            4
+          </div>
+          <div class="work-process-text">
+            Place Order
+          </div>
+          <div class="work-process-text">
+            Free Pickup
+          </div>
+          <div class="work-process-text">
+            Dry Cleaning
+          </div>
+          <div class="work-process-text">
+            Free Delivery
+          </div>
+        </div>
+    </div>
+    <!--Testimonials-->
+    <div style="margin-bottom: 40px;">
+      <h4 style="color:#47C6CF; text-align:center">
+        TESTIMONIALS
+      </h4>
+      <h2 style="text-align:center; color:#194276; font-size:35px; font-weight:bold;margin-bottom: 30px;">
+        Our Clients Say
+      </h2>
+        <div class="card-group">
+          <div class="card testimonial" style="position:relative">
+            <div class="card-body">
+              <img src="Assets\test1.jpg" class="client-img">
+              <h5 class="card-title clientname">Client Name</h5>
+              <p class="card-text">Profession</p>
+              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus deserunt ipsum numquam quasi fuga necessitatibus esse corporis dolorem aliquid.</p>
+
+            </div>
+          </div>
+          <div class="card testimonial" style="position:relative">
+            <div class="card-body">
+              <img src="Assets\test2.jpg" class="client-img">
+              <h5 class="card-title clientname">Client Name</h5>
+              <p class="card-text">Profession</p>
+              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus deserunt ipsum numquam quasi fuga necessitatibus esse corporis dolorem aliquid.</p>
+            </div>
+          </div>
+          <div class="card testimonial" style="position:relative">
+            <div class="card-body">
+              <img src="Assets\test3.jpg" class="client-img">
+              <h5 class="card-title clientname">Client Name</h5>
+              <p class="card-text">Profession</p>
+              <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus deserunt ipsum numquam quasi fuga necessitatibus esse corporis dolorem aliquid.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--Blogs-->
+    <div id="blogs">
+      <h4 style="color:#47C6CF; text-align:center">
+          OUR BLOG
+        </h4>
+        <h2 style="text-align:center; color:#194276; font-size:35px; font-weight:bold;">
+          Latest From Blog
+        </h2>
+    </div>
+    <div class="card-group" style="margin-bottom:50px">
+      <div class="card blog">
+        <img src="Assets\blog1.jpg" class="card-img-top blog-img" alt="...">
+        <div class="card-body">
+          <h5 class="card-title card-img-overlay blog-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h5>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, praesentium quia labore velit beatae voluptas blanditiis facilis consequuntur error tempora optio adipisci distinctio atque consectetur officiis hic numquam odio fugiat!</p>
+        </div>
+      </div>
+      <div class="card blog">
+        <img src="Assets\blog2.jpg" class="card-img-top blog-img " alt="..." >
+        <div class="card-body">
+          <h5 class="card-title card-img-overlay blog-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h5>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, praesentium quia labore velit beatae voluptas blanditiis facilis consequuntur error tempora optio adipisci distinctio atque consectetur officiis hic numquam odio fugiat!</p>
+        
+        </div>
+      </div>
+      <div class="card blog">
+        <img src="Assets\blog3.jpeg" class="card-img-top blog-img" alt="...">
+        <div class="card-body">
+          <h5 class="card-title card-img-overlay blog-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h5>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, praesentium quia labore velit beatae voluptas blanditiis facilis consequuntur error tempora optio adipisci distinctio atque consectetur officiis hic numquam odio fugiat!</p>
+          
+        </div>
+      </div>
+    </div>
+</div>
+<!--Footer-->
+<div class="container-fluid footer-grid">
+  <div class="row">
+    <div class="col-lg-5 col-sm-12 sec1">
+      <img src="Assets\YD_3.svg" id="footer-logo"><br><br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quisquam molestias ea et laudantium doloremque, quasi velit esse sunt pariatur praesentium vitae quidem dolorum porro aliquid aspernatur optio, ab ipsa.
+      <br><br>
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+          <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+        </svg>
+      </span>
+      <span class="ps-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+        </svg>
+      </span>
+      <span class="ps-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+        </svg>
+      </span>
+    </div>
+    <div class="col-lg-4 col-sm-12 sec2">
+      <h3 style="color: white;">
+        Get in touch
+      </h3>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+      </p>
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-geo-alt-fill" id="location" viewBox="0 0 16 16">
+          <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+        </svg>
+        &nbsp;Pimpri,Pune.
+      </span><br><br>
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" id="teleicon" width="20" height="20" fill="white" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+        </svg>
+        &nbsp;+91 2345098651
+      </span><br><br>
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"  fill="white" class="bi bi-envelope-fill" id="email" viewBox="0 0 16 16">
+          <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+        </svg>
+        &nbsp;yashdrycleaners@gmail.com
+      </span>
+    </div>
+    <div class="col-lg-3 col-sm-12 sec3">
+      <h3>
+        Quick Links
+      </h3>
+      <ul id="footer-links">
+        <li class="ps-2">
+          <a href="#carouselExampleIndicators" style="text-decoration: none; color: white;">Home
+      </a></li>
+        <li class="ps-2"> <a href="#About-us" style="text-decoration: none; color: white;">About us</a></li>
+        <li class="ps-2"> <a href="#Our-services" style="text-decoration: none; color: white;">Our Services</a></li>
+        <li class="ps-2">
+          <a href="#footer-links" style="text-decoration: none; color: white;">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  
+</div>
+<div class="bg-dark h-25 w-100">.</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html> 
